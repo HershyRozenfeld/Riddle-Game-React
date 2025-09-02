@@ -18,7 +18,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path='/play' element={<Play />} />
         <Route path='/leaderboard' element={<LeaderBoard />} />
         <Route path='/menu' element={<Menu />} />
-        <Route path='/riddle' element={<Riddle />} />
+        <Route path='/riddle' element={<Riddle name="" level="" question="" />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

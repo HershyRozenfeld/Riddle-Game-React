@@ -7,6 +7,7 @@ import Login from './views/Login.tsx'
 import Play from './views/Play.tsx'
 import LeaderBoard from './views/LeaderBoard.tsx'
 import Menu from './views/Menu.tsx'
+import Riddle from './views/Riddle.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path='/play' element={<Play />} />
         <Route path='/leaderboard' element={<LeaderBoard />} />
         <Route path='/menu' element={<Menu />} />
+        <Route path='/riddle' element={<Riddle />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

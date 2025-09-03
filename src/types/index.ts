@@ -18,7 +18,7 @@ export type LoginResponse = { profile: PlayerProfile };
 
 export type Riddle = {
   _id: string;
-  level: "Easy" | "Medium" | "Hard";
+  level: "Easy" | "Medium" | "Hard" | string;
   name: string;
   question: string;
   answer: number | string;

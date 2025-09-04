@@ -1,6 +1,6 @@
 import type { LoginResponse, PlayerProfile, StatsResponse, LeaderboardEntry } from "../types";
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://riddle-game-en69.onrender.com";
 
 async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
   const res = await fetch(`${BASE_URL}${path}`, init);

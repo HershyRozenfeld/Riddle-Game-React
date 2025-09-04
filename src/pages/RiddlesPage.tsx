@@ -179,10 +179,10 @@ export default function RiddlesPage() {
                     </div>
                   ) : (
                     <div style={{ display: "grid", gap: 6 }}>
-                      <div>📝 <b>{r.name}</b> — <span style={{ opacity: 0.7 }}>{r._id}</span></div>
-                      <div>🎯 רמה: {r.level}</div>
-                      <div>❓ {r.question}</div>
-                      <div>✅ תשובה: {String(r.answer)}</div>
+                      <div><b>{r.name}</b> — <span style={{ opacity: 0.7 }}>{r._id}</span></div>
+                      <div>רמה: {r.level}</div>
+                      <div>{r.question}</div>
+                      <div>תשובה: {String(r.answer)}</div>
                       <div style={{ display: "flex", gap: 8 }}>
                         <button onClick={() => beginEdit(r)}>ערוך/ערכי</button>
                         <button onClick={() => remove(r._id)}>מחק/י</button>

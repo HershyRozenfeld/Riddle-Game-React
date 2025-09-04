@@ -8,7 +8,7 @@ import LeaderboardPage from "./pages/LeaderboardPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import { PlayerProvider, usePlayer } from "./context/PlayerContext";
 
-function Protected({ children }: { children: JSX.Element }) {
+function Protected({ children }: { children: React.ReactElement }) {
   const { player } = usePlayer();
   if (!player) return <Navigate to="/auth" replace />;
   return children;
